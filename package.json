@@ -26,7 +26,8 @@
     "test": "mocha --require test/setup.js",
     "predeploy": "npm audit && npm run migrate-prod",
     "deploy": "git push heroku master",
-    "postdeploy": "npm run migrate:production"
+    "postdeploy": "npm run migrate:production",
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"
